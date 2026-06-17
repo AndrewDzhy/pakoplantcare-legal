@@ -1,114 +1,438 @@
-<!-- terms-of-use.html -->
 <!doctype html>
-<html lang="uk">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Terms of Use — Pako Plant Care</title>
+  <title>Terms of Use - Pako Plant Care</title>
+  <meta name="description" content="Terms of Use for Pako Plant Care." />
   <style>
     :root {
-      --bg: #f6f8fb;
-      --card: #fff;
-      --text: #1f2937;
-      --muted: #6b7280;
-      --accent: #2563eb;
-      --border: #e5e7eb;
+      --bg: #f4f7f2;
+      --card: #ffffff;
+      --text: #1f2a22;
+      --muted: #5f6f64;
+      --accent: #23644d;
+      --accent-2: #d9e7df;
+      --border: #dfe7e1;
+      --shadow: 0 18px 50px rgba(31, 42, 34, 0.08);
     }
+
     * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background: var(--bg);
       color: var(--text);
-      line-height: 1.6;
+      background:
+        radial-gradient(circle at top left, rgba(35, 100, 77, 0.10), transparent 34%),
+        linear-gradient(180deg, #f8faf7 0%, #eef4ef 100%);
+      line-height: 1.65;
     }
-    .wrap { max-width: 900px; margin: 0 auto; padding: 20px; }
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 24px;
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
     }
-    h1, h2 { line-height: 1.3; margin: 0 0 12px; }
-    h1 { font-size: clamp(1.5rem, 2.5vw, 2rem); }
-    h2 { font-size: clamp(1.1rem, 2vw, 1.35rem); margin-top: 24px; }
-    p, ul { margin: 10px 0; }
-    ul { padding-left: 20px; }
-    .meta { color: var(--muted); font-size: .95rem; }
-    a { color: var(--accent); text-decoration: none; }
+
     a:hover { text-decoration: underline; }
+
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    .hero {
+      padding: 18px 0 10px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .card-inner {
+      padding: 28px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--accent-2);
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+
+    h1 {
+      margin: 16px 0 10px;
+      font-size: clamp(2rem, 4vw, 2.7rem);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+    }
+
+    .lede {
+      margin: 0;
+      max-width: 68ch;
+      color: var(--muted);
+      font-size: 1.03rem;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .meta span {
+      padding: 6px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: #fbfcfa;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 18px 0 0;
+    }
+
+    .nav a {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: #fff;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    .nav a:hover {
+      border-color: rgba(35, 100, 77, 0.25);
+      text-decoration: none;
+    }
+
+    .section {
+      margin-top: 26px;
+      padding-top: 4px;
+    }
+
+    .section h2 {
+      margin: 0 0 10px;
+      font-size: 1.35rem;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+    }
+
+    .section p,
+    .section ul,
+    .section ol {
+      margin: 10px 0;
+    }
+
+    .section ul,
+    .section ol {
+      padding-left: 20px;
+    }
+
+    .section li + li { margin-top: 6px; }
+
+    .callout {
+      margin: 18px 0 0;
+      padding: 14px 16px;
+      border-left: 4px solid var(--accent);
+      background: #f6fbf8;
+      border-radius: 14px;
+      color: #244136;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .footer-links a {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #f7faf8;
+      border: 1px solid var(--border);
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
     @media (max-width: 640px) {
-      .wrap { padding: 12px; }
-      .card { padding: 16px; border-radius: 12px; }
+      .wrap { padding: 14px 12px 32px; }
+      .card-inner { padding: 20px 18px; }
+      h1 { font-size: clamp(1.75rem, 8vw, 2.4rem); }
+      .section h2 { font-size: 1.22rem; }
     }
   </style>
 </head>
 <body>
   <main class="wrap">
-    <article class="card">
-      <h1>Terms of Use for Pako Plant Care</h1>
-      <p class="meta"><strong>Effective date:</strong> March 28, 2026<br><strong>Last updated:</strong> March 28, 2026</p>
+    <section class="hero">
+      <div class="card">
+        <div class="card-inner">
+          <div class="eyebrow">Pako Plant Care</div>
+          <h1>Terms of Use</h1>
+          <p class="lede">
+            These Terms of Use govern your access to and use of Pako Plant Care,
+            including plant scanning, care guidance, and optional premium
+            subscription features.
+          </p>
+          <div class="meta">
+            <span>Effective date: June 17, 2026</span>
+            <span>Last updated: June 17, 2026</span>
+          </div>
+          <nav class="nav" aria-label="Terms sections">
+            <a href="#acceptance-of-terms">Acceptance</a>
+            <a href="#subscriptions-and-premium-features">Subscriptions</a>
+            <a href="#billing-and-auto-renewal">Billing</a>
+            <a href="#plant-identification-disclaimer">Disclaimer</a>
+            <a href="#privacy">Privacy</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </section>
 
-      <p>These Terms of Use (“Terms”) govern your use of the Pako Plant Care app provided by <strong>Andrii Dzhuryn</strong> (“we”, “us”, “our”). By using the App, you agree to these Terms.</p>
+    <section class="card">
+      <div class="card-inner">
+        <section id="acceptance-of-terms" class="section">
+          <h2>Acceptance of Terms</h2>
+          <p>
+            By downloading, installing, or using Pako Plant Care, you agree to
+            these Terms. If you do not agree, do not use the app.
+          </p>
+        </section>
 
-      <h2>1. The Service</h2>
-      <p>The App provides plant identification, plant health checks, care tracking/reminders, and optional premium subscription features. Results are informational and not guaranteed outcomes.</p>
+        <section id="app-description" class="section">
+          <h2>App Description</h2>
+          <p>
+            Pako Plant Care is a plant identification and plant care app. The app
+            can help you scan plants, view plant details, track care records, set
+            reminders, and access optional premium features.
+          </p>
+          <p>
+            No account is required to use the app's core functionality.
+          </p>
+        </section>
 
-      <h2>2. Eligibility</h2>
-      <p>You must be legally permitted to use the App under applicable law and Apple terms.</p>
+        <section id="plant-identification-disclaimer" class="section">
+          <h2>Plant Identification Disclaimer</h2>
+          <p>
+            Plant identification, health checks, and care suggestions are
+            informational only. They may be incomplete or inaccurate. The app does
+            not guarantee perfect identification, diagnosis, treatment, or plant
+            recovery.
+          </p>
+        </section>
 
-      <h2>3. Subscriptions and Billing</h2>
-      <ul>
-        <li>Auto-renewable subscriptions are processed via Apple In-App Purchase.</li>
-        <li>Payment is charged to your Apple ID at confirmation.</li>
-        <li>Auto-renewal continues unless canceled at least 24 hours before period end.</li>
-        <li>Manage/cancel in iOS: Settings &gt; Apple ID &gt; Subscriptions.</li>
-        <li>Free-trial rules apply per Apple/offer configuration.</li>
-        <li>Prices vary by region and are shown in-app before purchase.</li>
-        <li>Restore Purchases is available in-app.</li>
-      </ul>
+        <section id="informational-use-only" class="section">
+          <h2>Informational Use Only</h2>
+          <p>
+            Pako Plant Care is not a substitute for professional horticultural,
+            agricultural, or botanical advice where such advice is needed. You are
+            responsible for using your own judgment before acting on any result or
+            recommendation shown in the app.
+          </p>
+        </section>
 
-      <h2>4. License</h2>
-      <p>We grant a limited, non-exclusive, non-transferable, revocable license for personal, non-commercial use.</p>
+        <section id="no-guarantee-of-accuracy" class="section">
+          <h2>No Guarantee of Accuracy</h2>
+          <p>
+            We do not warrant that the app, plant identification results, care
+            guidance, or other content will always be accurate, available, or fit
+            for any particular purpose.
+          </p>
+        </section>
 
-      <h2>5. Acceptable Use</h2>
-      <ul>
-        <li>No reverse engineering or service abuse.</li>
-        <li>No bot/automated overload traffic.</li>
-        <li>No unlawful use of the App.</li>
-      </ul>
+        <section id="subscriptions-and-premium-features" class="section">
+          <h2>Subscriptions and Premium Features</h2>
+          <p>
+            The app may offer auto-renewable subscriptions that unlock premium
+            plant care features. Premium access remains active only while your
+            subscription entitlement is active.
+          </p>
+          <ul>
+            <li>Subscription products, prices, and available plans are shown in the app before purchase.</li>
+            <li>Restore Purchases is available in the app.</li>
+            <li>If a free trial is offered, the trial length and terms are shown in the app before purchase.</li>
+          </ul>
+        </section>
 
-      <h2>6. Intellectual Property</h2>
-      <p>App code, design, branding, and non-user content are owned by us or licensed to us.</p>
+        <section id="free-trials-if-offered" class="section">
+          <h2>Free Trials if Offered</h2>
+          <p>
+            If a free trial is offered for a subscription plan, you will see the
+            trial length before purchase. Any unused portion of a free trial may be
+            forfeited when you purchase a subscription, where applicable.
+          </p>
+        </section>
 
-      <h2>7. User Content</h2>
-      <p>You keep rights to your photos/data. You grant us limited rights to process content for app functionality.</p>
+        <section id="billing-and-auto-renewal" class="section">
+          <h2>Billing and Auto-Renewal</h2>
+          <ul>
+            <li>Payment will be charged to your Apple ID account at confirmation of purchase.</li>
+            <li>The subscription automatically renews unless canceled at least 24 hours before the end of the current period.</li>
+            <li>Your account may be charged for renewal within 24 hours before the end of the current period.</li>
+            <li>You can manage or cancel subscriptions in Apple Account settings.</li>
+            <li>Subscription availability, prices, and billing periods may vary by region.</li>
+          </ul>
+        </section>
 
-      <h2>8. Availability and Changes</h2>
-      <p>We may modify features, pricing, or availability, subject to applicable law.</p>
+        <section id="cancellation" class="section">
+          <h2>Cancellation</h2>
+          <p>
+            You can cancel a subscription in Apple Account settings. Canceling a
+            subscription stops future renewals, but you keep access until the end of
+            the current billing period.
+          </p>
+        </section>
 
-      <h2>9. Disclaimers</h2>
-      <p>The App is provided “as is” and “as available.” Identification/health results may be probabilistic and inaccurate.</p>
+        <section id="refunds" class="section">
+          <h2>Refunds</h2>
+          <p>
+            Refund requests are handled by Apple where applicable. We do not control
+            Apple’s refund decisions.
+          </p>
+        </section>
 
-      <h2>10. Limitation of Liability</h2>
-      <p>To the maximum extent allowed by law, we are not liable for indirect/incidental/consequential damages or loss of data/profits.</p>
+        <section id="restore-purchases" class="section">
+          <h2>Restore Purchases</h2>
+          <p>
+            If you change devices or need to recover access, use the app’s Restore
+            Purchases feature. The app checks your Apple subscription and RevenueCat
+            entitlement state to restore premium access when available.
+          </p>
+        </section>
 
-      <h2>11. Termination</h2>
-      <p>We may suspend/terminate access for Terms violations or abuse.</p>
+        <section id="acceptable-use" class="section">
+          <h2>Acceptable Use</h2>
+          <p>You agree not to use the app to:</p>
+          <ul>
+            <li>Abuse, disrupt, or overload the app or its services.</li>
+            <li>Reverse engineer or attempt unauthorized access to the app or its systems.</li>
+            <li>Use the app for unlawful, fraudulent, or harmful purposes.</li>
+            <li>Upload content you do not have the right to use.</li>
+          </ul>
+        </section>
 
-      <h2>12. Governing Law</h2>
-      <p>These Terms are governed by the laws of <strong>Ukraine</strong>, unless mandatory local law provides otherwise.</p>
+        <section id="user-content" class="section">
+          <h2>User Content / Plant Photos if Applicable</h2>
+          <p>
+            If you choose to scan or save plant photos, you remain responsible for
+            the content you submit. Plant photos may be processed to provide plant
+            identification or health-check results. If you save a photo to a plant
+            record, the image is stored on your device as part of that record.
+          </p>
+          <p>
+            We do not intentionally store uploaded scan image bytes on our servers.
+            However, the plant identification provider or related infrastructure may
+            process the image to return results.
+          </p>
+        </section>
 
-      <h2>13. Apple Terms</h2>
-      <p>Apple Standard EULA may also apply: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a></p>
+        <section id="intellectual-property" class="section">
+          <h2>Intellectual Property</h2>
+          <p>
+            The app, its design, branding, code, and non-user content are owned by
+            us or our licensors and are protected by applicable intellectual
+            property laws.
+          </p>
+        </section>
 
-      <h2>14. Contact</h2>
-      <p>
-        Andrii Dzhuryn<br>
-        byl. Nezalejnosti, Kalush. Ukraine.<br>
-        Email: <a href="mailto:support.pakoplant@icloud.com">support.pakoplant@icloud.com</a>
-      </p>
-    </article>
+        <section id="availability-and-changes" class="section">
+          <h2>Availability and Changes</h2>
+          <p>
+            We may modify, suspend, or discontinue any feature, pricing, or part of
+            the app at any time, subject to applicable law. The app may not always
+            be available, and we do not guarantee uninterrupted service.
+          </p>
+        </section>
+
+        <section id="disclaimer" class="section">
+          <h2>Disclaimer</h2>
+          <p>
+            The app is provided on an "as is" and "as available" basis. To the
+            fullest extent permitted by law, we disclaim warranties of merchantability,
+            fitness for a particular purpose, and non-infringement.
+          </p>
+        </section>
+
+        <section id="limitation-of-liability" class="section">
+          <h2>Limitation of Liability</h2>
+          <p>
+            To the fullest extent permitted by law, we are not liable for indirect,
+            incidental, special, consequential, or punitive damages, or for any loss
+            of profits, data, or goodwill arising from your use of the app.
+          </p>
+        </section>
+
+        <section id="privacy" class="section">
+          <h2>Privacy</h2>
+          <p>
+            Our collection and use of information is described in the Privacy Policy,
+            which is part of these Terms.
+          </p>
+        </section>
+
+        <section id="changes-to-terms" class="section">
+          <h2>Changes to Terms</h2>
+          <p>
+            We may update these Terms from time to time. If we do, we will revise the
+            date at the top of this page and make the updated Terms available here.
+          </p>
+        </section>
+
+        <section id="contact" class="section">
+          <h2>Contact</h2>
+          <p>
+            If you have questions about these Terms, subscription access, or the app,
+            contact us at:
+          </p>
+          <p>
+            <strong>Email:</strong> <a href="mailto:support.pakoplant@icloud.com">support.pakoplant@icloud.com</a><br />
+            <strong>App:</strong> Pako Plant Care
+          </p>
+        </section>
+
+        <div class="callout">
+          Privacy Policy: <a href="privacy.html">privacy.html</a> · Terms of Use: <a href="terms.html">terms.html</a>
+        </div>
+
+        <div class="footer-links">
+          <span class="small">Pako Plant Care</span>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 </html>
